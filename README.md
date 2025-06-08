@@ -6,7 +6,7 @@ Um aplicativo desenvolvido em Flutter que exibe cotações das principais cripto
 
 | Tela Principal | Detalhes da Moeda |
 | :---: | :---: |
-| ![Tela Principal com a lista de moedas](https://i.imgur.com/u7qA1H0.png) | ![Dialog com os detalhes de uma moeda](https://i.imgur.com/4sAoy12.png) |
+| ![Tela Principal com a lista de moedas](docs/Tela-Principal.png) | ![Dialog com os detalhes de uma moeda](docs/Tela-Modal.png) |
 | *Listagem com busca, cotação em USD/BRL e variação.* | *Dialog modal com informações detalhadas.* |
 
 ## ✨ Funcionalidades
@@ -58,7 +58,7 @@ Siga os passos abaixo para executar o projeto em sua máquina local.
 
 1.  **Clone o repositório:**
     ```sh
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone https://github.com/SchiavonNathan/flutter-cripto-broker
     cd seu-repositorio
     ```
 
@@ -92,23 +92,23 @@ Siga os passos abaixo para executar o projeto em sua máquina local.
 
 O projeto segue uma estrutura de pastas organizada por camadas para facilitar a navegação e a manutenção.
 
-lib/
-├── data/
-│   ├── datasources/
-│   │   └── crypto_datasource.dart      # Comunicação direta com a API
-│   └── repositories/
-│       └── crypto_repository_impl.dart # Implementação do repositório
-├── domain/
-│   ├── models/
-│   │   └── crypto_model.dart           # Modelo de dados da criptomoeda
-│   └── repositories/
-│       └── crypto_repository.dart      # Contrato (interface) do repositório
-├── presentation/
-│   ├── viewmodels/
-│   │   └── crypto_viewmodel.dart       # Lógica de estado e apresentação
-│   └── views/
-│       └── crypto_view.dart            # Widgets e UI da tela
-└── main.dart                           # Ponto de entrada e injeção de dependência
+- `lib/`
+  - `data/`
+    - `datasources/`
+      - `crypto_datasource.dart` # Comunicação direta com a API
+    - `repositories/`
+      - `crypto_repository_impl.dart` # Implementação do repositório
+  - `domain/`
+    - `models/`
+      - `crypto_model.dart` # Modelo de dados da criptomoeda
+    - `repositories/`
+      - `crypto_repository.dart` # Contrato (interface) do repositório
+  - `presentation/`
+    - `viewmodels/`
+      - `crypto_viewmodel.dart` # Lógica de estado e apresentação
+    - `views/`
+      - `crypto_view.dart` # Widgets e UI da tela
+  - `main.dart` # Ponto de entrada e injeção de dependência
 
 ---
 
